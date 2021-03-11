@@ -1,0 +1,30 @@
+int mf1 = 2;
+int mr1 = 3;
+
+int mf2= 4;
+int mr2 = 5;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(mf1, OUTPUT);
+  pinMode(mr1, OUTPUT);
+  pinMode(mf2, OUTPUT);
+  pinMode(mr2, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:   
+  digitalWrite(mf1, HIGH);
+  digitalWrite(mr1, LOW);
+
+  digitalWrite(mf2, HIGH);
+  digitalWrite(mr2, LOW);
+  delay(3000);
+
+  digitalWrite(mf1, LOW);
+  digitalWrite(mr1, HIGH);
+
+  digitalWrite(mf2, LOW);
+  digitalWrite(mr2, HIGH);
+  delay(3000);
+}
